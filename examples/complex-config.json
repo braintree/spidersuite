@@ -1,0 +1,27 @@
+{
+  "extends": "./examples/basic-config.json",
+
+  // Add some super secret urls not navigable from the initial seed url
+  "additionalPaths": [
+    "/supersecret/spidersuite-alpha-release/",
+    "/supersecret/spidersuite-beta-release/"
+  ],
+
+  // All titles must have this pattern
+  "titlePattern": "My Company Name",
+
+  "hashNotFoundWarnOnlyPatterns": [
+    // Warn all hashes, for those not interested in working anchors.
+    ".*"
+  ],
+
+  "http403WarnOnlyPatterns": [
+    // warn on example login urls because they always give a 403.
+    "example.*\\.com\\/login"
+  ],
+
+  "http404WarnOnlyPatterns": [
+    // warn on a url handled by another service, but not currently being tested.
+    "^#{ROOT_URL}\\/path-to-another-service\\/$"
+  ]
+}
