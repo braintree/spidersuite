@@ -7,9 +7,9 @@ const commander = require('commander');
 const cursor = require('ansi')(process.stdout);
 const util = require('util');
 
-const Crawler = require(path.resolve('../lib/Crawler'));
-const defaultConfig = require(path.resolve('../lib/config/defaultConfig'));
-const configFileReader = require(path.resolve('../lib/config/configFileReader'));
+const Crawler = require('../lib/Crawler');
+const defaultConfig = require('../lib/config/defaultConfig');
+const configFileReader = require('../lib/config/configFileReader');
 
 const pjson = require('../package.json');
 
