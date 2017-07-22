@@ -20,9 +20,7 @@ $ npm install spidersuite --save-dev
 
 1. Open another Terminal window in the same directory as your project.
     Run node for your localhost:
-    ```
-    ./node_modules/.bin/spidersuite https://localhost:8443/ [--config <path to config>] 
-    ```
+    <pre>./node_modules/.bin/spidersuite https://localhost:8443/ [--config <var>PATH_TO_CONFIG_FILE</var>]</pre> 
 
     The spidersuite [results](#broken-links) appear in this Terminal window.
 
