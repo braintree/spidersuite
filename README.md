@@ -79,7 +79,7 @@ The spidersuite configuration file resembles the [eslint configuration file](htt
 
 Use the `extends` property to find either a referenced file or the default configuration if you specify `spider:default`. 
 
-Supports only .json and .js files.
+Supports only `.json` or `.js` files.
 
 ### Configuration file options
 
