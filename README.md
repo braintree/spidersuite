@@ -7,7 +7,7 @@ This project uses Node.js to implement a spider, and outputs a list of warnings,
 * [Run spidersuite](#run-spidersuite)
 * [Broken links](#broken-links)
 * [Broken redirects](#broken-redirects)
-* [Config](#config)
+* [Configure spidersuite](#configure-spidersuite)
 
 ## Install spidersuite
 
@@ -22,10 +22,12 @@ $ npm install spidersuite --save-dev
 1. Open another Terminal window in the same directory as your project.
     Run node for your localhost:
     ```
-    ./node_modules/.bin/spidersuite [--config <path to config>] https://localhost:8443/
+    ./node_modules/.bin/spidersuite https://localhost:8443/ [--config <path to config>] 
     ```
 
     The spidersuite [results](#broken-links) appear in this Terminal window.
+
+    For information about setting configuration options in a configuration file, see [Configure spidersuite](#configure-spidersuite).
 
 ## Broken links
 
@@ -93,10 +95,10 @@ For any pattern, spidersuite replaces `#{ROOT_URL}` with the extracted root URL,
 | `excludePatterns` | A list of patterns that specify which URLs to not attempt. Default is spidersuite includes all urls it finds. |
 | `includePatterns` | A list of patterns that specify which URLs to attempt. Default is spidersuite includes all URLs it finds. If specified, spidersuite fetches pages that match at least one of the patterns. |
 | `titlePattern` | A regex pattern that indicates what the HTML title of the crawled pages on the same domain should contain. |
-| `<error>WarnOnlyPatterns` | Reports the specified `<error>` as a warning rather than a failure. Value is either `hashNotFound` or `http<XXX>`, as follows:<ul><li>`hashNotFoundWarnOnlyPatterns`. Reports `404` errors as warnings.</li><li>`httpXXXWarnOnlyPatterns`. Reports the specified `XXX` errors as warnings. The `XXX` value is a number from `400` to `510`.</li></ul> |
+| `<var>error</var>WarnOnlyPatterns` | Reports the specified `<var>error</var>` as a warning rather than a failure. Value is either `hashNotFound` or `http<var>XXX</var>`, as follows:<ul><li>`hashNotFoundWarnOnlyPatterns`. Reports `404` errors as warnings.</li><li>`http<var>XXX</var>WarnOnlyPatterns`. Reports the specified `<var>XXX</var>` errors as warnings. The `<var>XXX</var>` value is a number from `400` to `510`.</li></ul> |
 | `reportSpoolInterval` | A number that is greater than zero. Indicates the interval with which to report the current spool. The spool comprises the pages that are currently being fetched. Useful for debugging. |
 | `strictCiphers` | If `false`, the cipher list is relaxed. If `true`, a more strict version of ciphers is used over TLS. |
 | `simplecrawlerConfig` | Spidersuite is based on [`simplecrawler`](https://www.npmjs.com/package/simplecrawler). This module has many configuration options. Use the `simplecrawlerConfig` option to set simplecrawler options. |
-| `MAX_*_FROM` | By default, spidersuite reports only the first five broken links and redirects for a page. To change that default to report all broken links or redirects for each page, set the `MAX_LINKS_FROM` and `MAX_REDIRECTS_FROM` environment variables to `-1`.<blockquote><strong>Note:</strong> If the failure is in the header or footer and `MAX_LINKS_FROM` is set to `-1`, hundreds or thousands of entries appear in the `linkedFrom`section of the report, which makes the report hard to read.</blockquote> |
+| `MAX_LINKS_FROM`<br/>`MAX_REDIRECTS_FROM` | By default, spidersuite reports only the first five broken links and redirects for a page. To change that default to report all broken links or redirects for each page, set the `MAX_LINKS_FROM` and `MAX_REDIRECTS_FROM` environment variables to `-1`.<blockquote><strong>Note:</strong> If the failure is in the header or footer and `MAX_LINKS_FROM` is `-1`, hundreds or thousands of entries appear in the `linkedFrom`section of the report, which makes the report hard to read.</blockquote> |
 
 > **Note:** For more details about these options, see the configuration file examples in the `examples` directory.
