@@ -79,15 +79,13 @@ The spidersuite configuration file resembles the [eslint configuration file](htt
 
 Use the `extends` property to find either a referenced file or the default configuration if you specify `spider:default`. 
 
-Supports only JSON files.
+Supports only .json and .js files.
 
-### Config file options
+### Configuration file options
 
 The following table describes the full set of configuration options. 
 
-For more details about these options, see the configuration file examples in the `examples` directory.
-
-For any pattern, spidersuite replaces `#{ROOT_URL}` with the extracted root URL, such as https://domain.example.com:5522, which lets you treat URLs that intentionally, or unintentionally, link to other hosts differently.
+For any pattern, spidersuite replaces `#{ROOT_URL}` with the extracted root URL, such as `https://domain.example.com:5522`, which lets you treat URLs that intentionally, or unintentionally, link to other hosts differently.
 
 | Option | Description |
 |:-------|:------------|
@@ -100,3 +98,5 @@ For any pattern, spidersuite replaces `#{ROOT_URL}` with the extracted root URL,
 | `strictCiphers` | If `false`, the cipher list is relaxed. If `true`, a more strict version of ciphers is used over TLS. |
 | `simplecrawlerConfig` | Spidersuite is based on [`simplecrawler`](https://www.npmjs.com/package/simplecrawler). This module has many configuration options. Use the `simplecrawlerConfig` option to set simplecrawler options. |
 | `MAX_*_FROM` | By default, spidersuite reports only the first five broken links and redirects for a page. To change that default to report all broken links or redirects for each page, set the `MAX_LINKS_FROM` and `MAX_REDIRECTS_FROM` environment variables to `-1`.<blockquote><strong>Note:</strong> If the failure is in the header or footer and `MAX_LINKS_FROM` is set to `-1`, hundreds or thousands of entries appear in the `linkedFrom`section of the report, which makes the report hard to read.</blockquote> |
+
+> **Note:** For more details about these options, see the configuration file examples in the `examples` directory.
