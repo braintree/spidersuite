@@ -111,7 +111,7 @@ For any pattern, spidersuite replaces `#{ROOT_URL}` with the extracted root URL,
 
 [npm-image]: https://img.shields.io/npm/v/spidersuite.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/spidersuite
-[travis-image]: https://img.shields.io/travis/spidersuite/spidersuite/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/spidersuite/spidersuite
+[travis-image]: https://img.shields.io/travis/braintree/spidersuite/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/braintree/spidersuite
 [downloads-image]: https://img.shields.io/npm/dm/spidersuite.svg?style=flat-square
 [downloads-url]: https://www.npmjs.com/package/spidersuite
