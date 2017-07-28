@@ -1,4 +1,8 @@
 # Spidersuite
+[![NPM version][npm-image]][npm-url]
+[![build status][travis-image]][travis-url]
+[![Downloads][downloads-image]][downloads-url]
+
 
 This project uses Node.js to implement a spider, and outputs a list of warnings, errors, and 404s.
 
@@ -103,3 +107,11 @@ For any pattern, spidersuite replaces `#{ROOT_URL}` with the extracted root URL,
 > **Note:**  If the failure is in the header or footer and `MAX_LINKS_FROM` is `-1`, hundreds or thousands of entries appear in the `linkedFrom` section of the report, which makes the report hard to read.
 
 > **Note:** For more details about these options, see the configuration file examples in the `examples` directory.
+
+
+[npm-image]: https://img.shields.io/npm/v/spidersuite.svg?style=flat-square
+[npm-url]: https://www.npmjs.com/package/spidersuite
+[travis-image]: https://img.shields.io/travis/spidersuite/spidersuite/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/spidersuite/spidersuite
+[downloads-image]: https://img.shields.io/npm/dm/spidersuite.svg?style=flat-square
+[downloads-url]: https://www.npmjs.com/package/spidersuite
