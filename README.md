@@ -1,8 +1,8 @@
-# Spidersuite
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
 [![Downloads][downloads-image]][downloads-url]
 
+# spidersuite
 
 This project uses Node.js to implement a spider, and outputs a list of warnings, errors, and 404s.
 
@@ -101,7 +101,7 @@ For any pattern, spidersuite replaces `#{ROOT_URL}` with the extracted root URL,
 | `<ERROR>WarnOnlyPatterns` | Reports the specified `<ERROR>` as a warning rather than a failure. Value is either `hashNotFound` or `http<XXX>`. `hashNotFoundWarnOnlyPatterns` reports `404` errors as warnings. `http<XXX>WarnOnlyPatterns` reports the specified `<XXX>` errors as warnings. The `<XXX>` value is a number from `400` to `510`. |
 | `reportSpoolInterval` | A number that is greater than zero. Indicates the interval with which to report the current spool. The spool comprises the pages that are currently being fetched. Useful for debugging. |
 | `strictCiphers` | If `false`, the cipher list is relaxed. If `true`, a more strict version of ciphers is used over TLS. |
-| `simplecrawlerConfig` | Spidersuite is based on [`simplecrawler`](https://www.npmjs.com/package/simplecrawler). This module has many configuration options. Use the `simplecrawlerConfig` option to set simplecrawler options. |
+| `simplecrawlerConfig` | spidersuite is based on [`simplecrawler`](https://www.npmjs.com/package/simplecrawler). This module has many configuration options. Use the `simplecrawlerConfig` option to set simplecrawler options. |
 | `MAX_LINKS_FROM`, `MAX_REDIRECTS_FROM` | By default, spidersuite reports only the first five broken links and redirects for a page. To report all broken links or redirects for each page, set the `MAX_LINKS_FROM` and `MAX_REDIRECTS_FROM` environment variables to `-1`. |
 
 > **Note:**  If the failure is in the header or footer and `MAX_LINKS_FROM` is `-1`, hundreds or thousands of entries appear in the `linkedFrom` section of the report, which makes the report hard to read.
