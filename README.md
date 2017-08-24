@@ -20,6 +20,10 @@ $ npm install spidersuite --save-dev
 
 ## Usage
 
+1. Create a configuration file. See [Configure spidersuite](#configure-spidersuite) and see the `config` directory for an example configuration file.
+
+    > **Note:** For more details about configuration options, see the configuration file examples in the `examples` directory.
+
 1. Start the app that you want to crawl.
 
 1. Open another Terminal window in the same directory as your project.
@@ -29,8 +33,6 @@ $ npm install spidersuite --save-dev
     ```
 
     The spidersuite [results](#broken-links) appear in this Terminal window.
-
-    For information about setting configuration options in a configuration file, see [Configure spidersuite](#configure-spidersuite).
 
 ## Broken links
 
@@ -101,13 +103,12 @@ For any pattern, spidersuite replaces `#{ROOT_URL}` with the extracted root URL,
 | `<ERROR>WarnOnlyPatterns` | Reports the specified `<ERROR>` as a warning rather than a failure. Value is either `hashNotFound` or `http<XXX>`. `hashNotFoundWarnOnlyPatterns` reports `404` errors as warnings. `http<XXX>WarnOnlyPatterns` reports the specified `<XXX>` errors as warnings. The `<XXX>` value is a number from `400` to `510`. |
 | `reportSpoolInterval` | A number that is greater than zero. Indicates the interval with which to report the current spool. The spool comprises the pages that are currently being fetched. Useful for debugging. |
 | `strictCiphers` | If `false`, the cipher list is relaxed. If `true`, a more strict version of ciphers is used over TLS. |
-| `simplecrawlerConfig` | spidersuite is based on [`simplecrawler`](https://www.npmjs.com/package/simplecrawler). This module has many configuration options. Use the `simplecrawlerConfig` option to set simplecrawler options. |
+| `simplecrawlerConfig` | Spidersuite is based on [`simplecrawler`](https://www.npmjs.com/package/simplecrawler). This module has many configuration options. Use the `simplecrawlerConfig` option to set simplecrawler options. |
 | `MAX_LINKS_FROM`, `MAX_REDIRECTS_FROM` | By default, spidersuite reports only the first five broken links and redirects for a page. To report all broken links or redirects for each page, set the `MAX_LINKS_FROM` and `MAX_REDIRECTS_FROM` environment variables to `-1`. |
 
 > **Note:**  If the failure is in the header or footer and `MAX_LINKS_FROM` is `-1`, hundreds or thousands of entries appear in the `linkedFrom` section of the report, which makes the report hard to read.
 
-> **Note:** For more details about these options, see the configuration file examples in the `examples` directory.
-
+> **Note:** For more details about these options, see the configuration file examples in the `examples` directory. Also, see the `config` directory for an example configuration file that works with `devdiscoverynodeweb`.
 
 [npm-image]: https://img.shields.io/npm/v/spidersuite.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/spidersuite
