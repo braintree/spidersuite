@@ -28,8 +28,7 @@
         "/docs/classic/limited-release/ec-billing-address/",
         "/docs/classic/limited-release/ec-le-lm/",
         "/docs/classic/limited-release/ec-le/",
-        "/docs/classic/limited-release/headless-ec/",
-        "/product-picker/"
+        "/docs/classic/limited-release/headless-ec/"
     ],
     "hashNotFoundWarnOnlyPatterns": [
         ".*"
@@ -42,6 +41,13 @@
         "/authflow/password-recovery",
         "/us/cgi-bin/webscr",
         "/us/webapps/accountrecovery/passwordrecovery/",
-        "/us/webapps/mpp/"
+        "/us/webapps/mpp/",
+        "/product-picker/",
+        "/developer/webhooksSimulator/",
+        "/developer/notifications/",
+        "/developer/dashboard/",
+        "/developer/applications/",
+        "/developer/accounts/",
+        "/developer/accountStatus/"
     ]
 }
