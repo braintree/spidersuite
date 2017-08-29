@@ -35,10 +35,6 @@
         ".*"
     ],
 
-    "http403WarnOnlyPatterns": [
-        "*.*\\.com\\/login"
-    ],
-
     "http404WarnOnlyPatterns": [
         "/us/webapps/mpp/",
         "/logout/",
@@ -48,5 +44,4 @@
         "/us/webapps/accountrecovery/passwordrecovery/",
         "/us/webapps/mpp/"
     ]
-    
 }
