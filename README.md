@@ -20,10 +20,6 @@ $ npm install spidersuite --save-dev
 
 ## Usage
 
-1. Create a configuration file. See [Configure spidersuite](#configure-spidersuite) and see the `config` directory for an example configuration file.
-
-    > **Note:** For more details about configuration options, see the configuration file examples in the `examples` directory.
-
 1. Start the app that you want to crawl.
 
 1. Open another Terminal window in the same directory as your project.
@@ -108,7 +104,7 @@ For any pattern, spidersuite replaces `#{ROOT_URL}` with the extracted root URL,
 
 > **Note:**  If the failure is in the header or footer and `MAX_LINKS_FROM` is `-1`, hundreds or thousands of entries appear in the `linkedFrom` section of the report, which makes the report hard to read.
 
-> **Note:** For more details about these options, see the configuration file examples in the `examples` directory. Also, see the `config` directory for an example configuration file that works with `devdiscoverynodeweb`.
+> **Note:** For more details about these options, see the configuration file examples in the `examples` directory.
 
 [npm-image]: https://img.shields.io/npm/v/spidersuite.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/spidersuite
