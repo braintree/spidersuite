@@ -1,0 +1,47 @@
+{
+    "extends": "spider:default",
+    "additionalPaths": [
+        "/docs/limited-release/balance-accounts/",
+        "/docs/limited-release/card-accounts/",
+        "/docs/limited-release/carrier-billing/",
+        "/docs/limited-release/charity-search/",
+        "/docs/limited-release/customer-disputes/",
+        "/docs/limited-release/customer-merchant-acquisition-partner/api/",
+        "/docs/limited-release/customer-merchant-acquisition-partner/isu/",
+        "/docs/limited-release/customer-merchant-acquisition-partner/mam/",
+        "/docs/limited-release/financing-options/",
+        "/docs/limited-release/limits-resolutions/",
+        "/docs/limited-release/money-requests/",
+        "/docs/limited-release/orders/",
+        "/docs/limited-release/personal-payments/",
+        "/docs/limited-release/plans-and-subscriptions/",
+        "/docs/limited-release/pp4mp/",
+        "/docs/limited-release/pp4mp-disputes/",
+        "/docs/limited-release/price-agreements/",
+        "/docs/limited-release/raas/",
+        "/docs/limited-release/reports/setup/",
+        "/docs/limited-release/transaction-search/",
+        "/docs/classic/products/adaptive-payments/",
+        "/docs/classic/express-checkout/",
+        "/docs/classic/limited-release/addressverify/",
+        "/docs/classic/limited-release/getverifiedstatus/",
+        "/docs/classic/limited-release/ec-billing-address/",
+        "/docs/classic/limited-release/ec-le-lm/",
+        "/docs/classic/limited-release/ec-le/",
+        "/docs/classic/limited-release/headless-ec/",
+        "/product-picker/"
+    ],
+    "hashNotFoundWarnOnlyPatterns": [
+        ".*"
+    ],
+
+    "http404WarnOnlyPatterns": [
+        "/us/webapps/mpp/",
+        "/logout/",
+        "/signin?",
+        "/authflow/password-recovery",
+        "/us/cgi-bin/webscr",
+        "/us/webapps/accountrecovery/passwordrecovery/",
+        "/us/webapps/mpp/"
+    ]
+}
