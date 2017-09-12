@@ -96,7 +96,7 @@ For any pattern, spidersuite replaces `#{ROOT_URL}` with the extracted root URL,
 | `excludePatterns` | A list of patterns that specify which URLs to not attempt. Default is spidersuite includes all URLs it finds. |
 | `includePatterns` | A list of patterns that specify which URLs to attempt. Default is spidersuite includes all URLs it finds. If specified, spidersuite fetches pages that match at least one of the patterns. |
 | `titlePattern` | A regular expression pattern that indicates what the HTML title of the crawled pages on the same domain should contain. |
-| `<ERROR>WarnOnlyPatterns` | Reports the specified `<ERROR>` as a warning rather than a failure. Value is either `hashNotFound` or `http<XXX>`. `hashNotFoundWarnOnlyPatterns` reports `404` errors as warnings. `http<XXX>WarnOnlyPatterns` reports the specified `<XXX>` errors as warnings. The `<XXX>` value is a number from `400` to `510`. |
+| `<ERROR>WarnOnlyPatterns` | Reports the specified `<ERROR>` as a warning rather than a failure. Value is either `hashNotFound` or `http<XXX>`. `http<XXX>WarnOnlyPatterns` reports the specified `<XXX>` errors as warnings. The `<XXX>` value is a number from `400` to `510`. |
 | `reportSpoolInterval` | A number that is greater than zero. Indicates the interval with which to report the current spool. The spool comprises the pages that are currently being fetched. Useful for debugging. |
 | `strictCiphers` | If `false`, the cipher list is relaxed. If `true`, a more strict version of ciphers is used over TLS. |
 | `simplecrawlerConfig` | Spidersuite is based on [`simplecrawler`](https://www.npmjs.com/package/simplecrawler). This module has many configuration options. Use the `simplecrawlerConfig` option to set simplecrawler options. |
