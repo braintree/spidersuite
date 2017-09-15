@@ -18,6 +18,7 @@
     "node": ">=4.2"
   },
   "scripts": {
+    "pretest": "eslint *.js ./lib",
     "test": "mocha --recursive --reporter spec test/unit",
     "lint": "eslint *.js ./lib"
   },
