@@ -1,6 +1,10 @@
 openapilint release notes
 ============================
 
+0.3.0
+-----
+* Fix logging to only log an ignored url once.
+
 0.2.0
 -----
 * Add a custom user agent.
