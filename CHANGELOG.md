@@ -1,9 +1,10 @@
-openapilint release notes
-============================
+spidersuite release notes
+=========================
 
 0.3.0
 -----
 * Fix logging to only log an ignored url once.
+* Fix hash checks to only produce warnings or errors for urls not ignored.
 * Rename default config string to `spidersuite:default`.  `spider:default` may be removed at a future date.
 * Remove the configurable `MAX_LINKS_FROM` and `MAX_REDIRECTS_FROM` reporting config.
 
