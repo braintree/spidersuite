@@ -1,5 +1,5 @@
 'use strict';
 
 module.exports = {
-  extends: "spidersuite:default"
-}
+  extends: 'spidersuite:default'
+};

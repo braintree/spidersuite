@@ -18,8 +18,9 @@
     "node": ">=4.2"
   },
   "scripts": {
-    "test": "mocha --recursive --reporter spec test/unit",
-    "lint": "eslint *.js ./lib"
+    "lint": "eslint *.js ./bin ./examples ./lib",
+    "pretest": "npm run lint",
+    "test": "mocha --recursive --reporter spec test/unit"
   },
   "dependencies": {
     "ansi": "^0.3.1",
