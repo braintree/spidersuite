@@ -4,6 +4,7 @@ openapilint release notes
 0.3.0
 -----
 * Fix logging to only log an ignored url once.
+* Rename default config string to `spidersuite:default`.  `spider:default` may be removed at a future date.
 
 0.2.0
 -----

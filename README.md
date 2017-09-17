@@ -4,7 +4,7 @@
 
 # spidersuite
 
-This project uses Node.js to implement a spider, and outputs a list of warnings, errors, and 404s.
+This project uses Node.js to implement a spider test suite, and outputs a list of warnings, errors, and 404s.
 
 * [Install spidersuite](#install-spidersuite)
 * [Usage](#usage)
@@ -80,7 +80,7 @@ To meet your crawling and reporting needs, set one or more options in the spider
 
 The spidersuite configuration file resembles the [eslint configuration file](http://eslint.org/docs/user-guide/configuring). 
 
-Use the `extends` property to find either a referenced file or the default configuration if you specify `spider:default`. 
+Use the `extends` property to find either a referenced file or the default configuration if you specify `spidersuite:default`.
 
 Supports only `.json` or `.js` files.
 
