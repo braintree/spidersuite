@@ -5,6 +5,7 @@ openapilint release notes
 -----
 * Fix logging to only log an ignored url once.
 * Rename default config string to `spidersuite:default`.  `spider:default` may be removed at a future date.
+* Remove the configurable `MAX_LINKS_FROM` and `MAX_REDIRECTS_FROM` reporting config.
 
 0.2.0
 -----
