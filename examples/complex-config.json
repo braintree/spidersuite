@@ -17,11 +17,16 @@
 
   "http403WarnOnlyPatterns": [
     // warn on example login urls because they always give a 403.
-    "example.*\\.com\\/login"
+    "example.*\\.com/login"
   ],
 
   "http404WarnOnlyPatterns": [
     // warn on a url handled by another service, but not currently being tested.
-    "^#{ROOT_URL}\\/path-to-another-service\\/$"
+    "^#{ROOT_URL}/path-to-another-service/$"
+  ],
+
+  "includePatterns": [
+    // only crawl links on the root url, and not external urls.
+    "^#{ROOT_URL}"
   ]
 }
