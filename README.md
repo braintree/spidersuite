@@ -105,6 +105,18 @@ For any pattern, spidersuite replaces `#{ROOT_URL}` with the extracted root URL,
 
 > **Note:** For more details about these options, see the configuration file examples in the `examples` directory.
 
+## License
+
+See [License](LICENSE).
+
+## Contributing
+
+See [Contributing](CONTRIBUTING.md).
+
+## Acknowledgements
+
+This project was inspired by - and heavily influenced by - [`eslint`](https://github.com/eslint/eslint/).  The configuration parsing code was modified for usage in this project.
+
 [npm-image]: https://img.shields.io/npm/v/spidersuite.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/spidersuite
 [travis-image]: https://img.shields.io/travis/braintree/spidersuite/master.svg?style=flat-square
