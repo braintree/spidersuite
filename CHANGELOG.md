@@ -1,6 +1,10 @@
 spidersuite release notes
 =========================
 
+v0.3.1
+-----
+* Fix bug where output was not flushed before ending the process.
+
 v0.3.0
 -----
 * Fix logging to only log an ignored url once.
