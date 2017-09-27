@@ -1,0 +1,6 @@
+{
+  "includePatterns": [
+    // only crawl links on the root url, and not external urls.
+    "^#{ROOT_URL}"
+  ]
+}

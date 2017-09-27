@@ -1,5 +1,8 @@
 {
-  "extends": "./examples/basic-config.json",
+  "extends": [
+    "./examples/basic-config.json",
+    "./examples/local-only.json"
+  ],
 
   // Add some super secret urls not navigable from the initial seed url
   "additionalPaths": [
@@ -23,10 +26,5 @@
   "http404WarnOnlyPatterns": [
     // warn on a url handled by another service, but not currently being tested.
     "^#{ROOT_URL}/path-to-another-service/$"
-  ],
-
-  "includePatterns": [
-    // only crawl links on the root url, and not external urls.
-    "^#{ROOT_URL}"
   ]
 }
