@@ -1,6 +1,11 @@
 spidersuite release notes
 =========================
 
+v0.3.2
+-----
+* Fix bug where process.exit() was improperly used.
+* Fix issue where urls were silently skipped by adding `disallowed` url reporting.
+
 v0.3.1
 -----
 * Fix bug where output was not flushed before ending the process.
