@@ -1,6 +1,6 @@
 {
   "name": "spidersuite",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Spider test suite application for crawling and validating your website",
   "repository": {
     "type": "git",

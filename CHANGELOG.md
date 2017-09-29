@@ -1,6 +1,11 @@
 spidersuite release notes
 =========================
 
+v0.3.3
+-----
+* Fix bug where simplecrawlerConfig could be undefined and would crash.
+* Only store unique ignored and disallowed urls.
+
 v0.3.2
 -----
 * Fix bug where process.exit() was improperly used.
