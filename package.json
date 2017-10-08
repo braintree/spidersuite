@@ -20,7 +20,7 @@
   "scripts": {
     "lint": "eslint *.js ./bin ./examples ./lib",
     "pretest": "npm run lint",
-    "test": "mocha --recursive --reporter spec test/unit"
+    "test": "mocha"
   },
   "dependencies": {
     "ansi": "^0.3.1",
