@@ -1,7 +1,7 @@
 spidersuite release notes
 =========================
 
-v.next
+v0.3.4
 -----
 * Fix bug where other titles were being checked against the titlePattern.
 
