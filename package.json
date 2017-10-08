@@ -18,7 +18,7 @@
     "node": ">=4.2"
   },
   "scripts": {
-    "lint": "eslint *.js ./bin ./examples ./lib",
+    "lint": "eslint *.js ./bin ./examples ./lib ./test",
     "pretest": "npm run lint",
     "test": "mocha"
   },
