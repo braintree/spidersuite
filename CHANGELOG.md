@@ -1,6 +1,10 @@
 spidersuite release notes
 =========================
 
+v.next
+-----
+* Fix bug where other titles were being checked against the titlePattern.
+
 v0.3.3
 -----
 * Fix bug where simplecrawlerConfig could be undefined and would crash.
