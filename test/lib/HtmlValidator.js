@@ -30,7 +30,9 @@ describe('HtmlValidator', () => {
       '<html><head><title>NotMyNotCompanyNot</title></head></html>',
       '<html><head><title>My Company</title></head></html>',
       '<html><head><title>mycompany</title></head></html>',
-      '<html><head><title>MYCOMPANY</title></head></html>'
+      '<html><head><title>MYCOMPANY</title></head></html>',
+      '<html><head><title>MYCOMPANY</title></head><body><title>MyCompany not in html head title</title></body></html>',
+      '<head><title>MYCOMPANY</title></head><body><title>MyCompany not in head title</title></body>'
     ].forEach((rawHtml) => {
       it(`should return truthy if the head.title does not match the pattern: ${rawHtml}`, () => {
         const $ = cheerio.load(rawHtml);
